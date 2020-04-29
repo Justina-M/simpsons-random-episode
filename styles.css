@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+.top {
+    background-color: #f4f4f4;
+    background-image: url('simpsons.jpg');
+    height: 330px;
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+}
+
+.bottom {
+    width: 740px;
+    margin: -40px auto 0;
+}
+
+.stage-container {
+    display: inline-block;
+}
+
+.stage-label {
+    border: 1px solid green;
+    position: relative;
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, rgba(95,158,160, 0.1) 0%, rgba(95,158,190, 0.1) 100%), url("yellow-beam.png");
+    border-radius: 40px 40px 5px 5px;
+    background-position: 40% 65%;
+    background-size: 400px;
+}
+
+.season {border: 10.8px solid cadetblue;}
+
+.episode {border: 10.8px solid crimson;}
+
+.label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 60px;
+    text-shadow: 
+        -1px -1px 0px #000,
+         0px -1px 0px #000,
+         1px -1px 0px #000,
+        -1px  0px 0px #000,
+         1px  0px 0px #000,
+        -1px  1px 0px #000,
+         0px  1px 0px #000,
+         1px  1px 0px #000;
+}
+
+.season .label{color: cadetblue}
+
+.episode .label{color: crimson}
+
+.stage-border {
+    display: inline-block;
+    margin: 40px 50px 50px 50px;
+    border: 10px solid #d8d8d8;
+    border-style: inset;
+}
+
+.stage {
+    margin: 0 auto;
+    width: 200px;
+    padding: 45px 20px 65px 17.5px;
+    overflow: hidden;
+    background: #000;
+    border-top: 8px solid #000;
+    border-bottom: 8px solid #000;
+    border-left: 5px solid #000;
+    border-right: 5px solid #000;
+    perspective: 1000px;
+}
+
+.rotate {
+    width: 200px;
+    height: 100px;
+    margin: 0 auto 0;
+    transform-style: preserve-3d;
+}
+
+.ring {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+}
+
+.slot {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    background: #fff;
+/*    border: 1px solid red;*/
+}
+
+#ring1 .slot {
+    border-right: 5px solid #000;
+}
+
+.slot p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 90px;
+    font-weight: bold;
+    text-align: center;
+    margin-block-start: 0;
+    line-height: 1.1;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 2px; 
+}
+
+#stage1 .slot p {
+    color: cadetblue;
+    -webkit-text-fill-color: cadetblue;
+}
+
+#stage2 .slot p {
+    color: crimson;
+    -webkit-text-fill-color: crimson;
+}
+
+.spin {
+    width: 300px;
+    margin: 0 auto;
+/*    padding: 10px 30px;*/
+/*    border-radius: 10px;*/
+    cursor: pointer;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: yellow;
+    text-shadow: 
+        -1px -1px 0px #000,
+         0px -1px 0px #000,
+         1px -1px 0px #000,
+        -1px  0px 0px #000,
+         1px  0px 0px #000,
+        -1px  1px 0px #000,
+         0px  1px 0px #000,
+         1px  1px 0px #000;
+    transition: 0.2s all;
+}
+
+.spin:hover {
+    color: #fff;
+    font-size: 62px;
+}
+
+.spin-0     { transform: rotateX(-3963deg); } 
+.spin-1     { transform: rotateX(-3999deg); } 
+.spin-2     { transform: rotateX(-4035deg); } 
+.spin-3     { transform: rotateX(-4071deg); } 
+.spin-4     { transform: rotateX(-4107deg); }
+.spin-5     { transform: rotateX(-4143deg); }
+.spin-6     { transform: rotateX(-3819deg); } 
+.spin-7     { transform: rotateX(-3855deg); }
+.spin-8     { transform: rotateX(-3891deg); } 
+.spin-9     { transform: rotateX(-3927deg); } 
+
+@keyframes back-spin {
+    100%  { transform: rotateX(36deg); }
+}
+
+@keyframes spin-0 {
+    0%    { transform: rotateX(36deg); }
+    100%  { transform: rotateX(-3963deg); }
+}
+@keyframes spin-1 {
+    0%    { transform: rotateX(36deg); }
+    100%  { transform: rotateX(-3999deg); }
+}
+@keyframes spin-2 {
+    0%    { transform: rotateX(36deg); }
+    100%  { transform: rotateX(-4035deg); }
+}
+@keyframes spin-3 {
+    0%    { transform: rotateX(36deg); }
+    100%  { transform: rotateX(-4071deg); }
+}
+@keyframes spin-4 {
+    0%    { transform: rotateX(36deg); }
+    100%  { transform: rotateX(-4107deg); }
+}
+@keyframes spin-5 {
+    0%    { transform: rotateX(36deg); }
+    100%  { transform: rotateX(-4143deg); }
+}
+@keyframes spin-6 {
+    0%    { transform: rotateX(36deg); }
+    100%  { transform: rotateX(-3819deg); }
+}
+@keyframes spin-7 {
+    0%    { transform: rotateX(36deg); }
+    100%  { transform: rotateX(-3855deg); }
+}
+@keyframes spin-8 {
+    0%    { transform: rotateX(36deg); }
+    100%  { transform: rotateX(-3891deg); }
+}
+@keyframes spin-9 {
+    0%    { transform: rotateX(36deg); }
+    100%  { transform: rotateX(-3927deg); }
+}
