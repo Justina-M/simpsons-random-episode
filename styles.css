@@ -22,7 +22,6 @@ body {
 }
 
 .stage-label {
-    border: 1px solid green;
     position: relative;
     width: 300px;
     height: 100px;
@@ -116,6 +115,43 @@ body {
     line-height: 1.1;
     -webkit-text-stroke-color: #000;
     -webkit-text-stroke-width: 2px; 
+}
+
+@media only screen and (max-width: 576px) {
+    .top {
+        height: 30vh;
+        background-size: 80%;
+    }
+    .bottom {
+        width: 550px;
+    }
+    .stage-label {
+        width: 220px;
+        height: 80px;
+    }
+    .label {
+        font-size: 45px;
+    }
+    .stage-border {
+        border: 6px solid #d8d8d8;
+        border-style: inset;
+        margin: 40px 18px 50px 18px;
+    }
+    .stage {
+        width: 180px;
+        padding: 45px 20px 65px 15px;
+    }
+    .rotate {
+/*        width: 190px;*/
+/*        height: 90px;*/
+    }
+    .slot {
+        width: 84px;
+/*        height: 90px;*/
+    }
+    #ring1 .slot {
+        border-right: none;
+    }
 }
 
 #stage1 .slot p {
